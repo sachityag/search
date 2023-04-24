@@ -2,10 +2,10 @@
 #include <string.h>
 #include "compare.h"
 
-int compare(int a[], int i, int j)
+int compare(int a[], int i, int term)
 {
-	if(a[i] > a[j]) {
-		return 1;
+	if(a[i] == term) {
+		return i;
 	}
-	return 0;
+	return -1;
 }
