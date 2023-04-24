@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int len;
-	int searchterm = 5;
+	int searchterm = 0;
 	int retval;
 	int a[20] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	if(argc > 21) {
@@ -21,9 +21,12 @@ int main(int argc, char *argv[])
 	for(i=0;i<len;i++) {
 		a[i] = atoi(argv[i+1]);
 	}
-	retval = search(a, len);
+	retval = search(a, len, searchterm);
 	if(retval == -1) {
 		printf("Search not found\n");
+	}
+	else {
+		printf("Search found at index %d\n", retval);
 	}
 
 	return 0;

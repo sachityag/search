@@ -13,7 +13,7 @@ comparemain.o: comparemain.c compare.h
 compare.o: compare.c compare.h
 	gcc compare.c -o compare.o -c
 
-search.o: search.c search.h
+search.o: search.c search.h compare.h
 	gcc search.c -o search.o -c
 
 clean: 
