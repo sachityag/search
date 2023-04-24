@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "compare.h"
-
 int main(int argc, char *argv[])
 {
 	int a[11] = {7, 6, 4, 3, 8, 9, 1, 2, 10, 11};
